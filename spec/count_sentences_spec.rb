@@ -35,7 +35,7 @@ describe String do
   describe "#count_sentences" do
 
     it  "returns the number of sentences in a string" do
-      expect("one. two. three?".count_sentences).to eq(0)
+      expect("one. two. three?".count_sentences).to eq(1)
     end
 
     it "returns zero if there are no sentences in a string" do
@@ -44,6 +44,6 @@ describe String do
 
     it "returns the number of sentences in a complex string" do
       complex_string = "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
-      expect(complex_string.count_sentences).to eq(0)
+      expect(complex_string.count_sentences).to eq(1)
     end
   end
