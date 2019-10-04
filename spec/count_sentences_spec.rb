@@ -47,6 +47,3 @@ describe String do
       expect(complex_string.count_sentences).to eq(0)
     end
   end
-
-
-end
